@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -20,7 +21,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         
-        window?.rootViewController = UIViewController()
+        let model = Model()
+        let viewModel = ViewModel(model: model)
+        let view = ViewController(model: viewModel)
+        
+        window?.rootViewController = view
         window?.makeKeyAndVisible()
     }
 
