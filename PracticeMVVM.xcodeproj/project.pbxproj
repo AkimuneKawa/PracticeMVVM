@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,6 @@
 		8980B75F4004303D9388B047 /* Pods_PracticeMVVM_PracticeMVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDE75E99526E2DDD943D402 /* Pods_PracticeMVVM_PracticeMVVMUITests.framework */; };
 		AF89D0BE25A48375005AB81F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF89D0BD25A48375005AB81F /* AppDelegate.swift */; };
 		AF89D0C025A48375005AB81F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF89D0BF25A48375005AB81F /* SceneDelegate.swift */; };
-		AF89D0C225A48375005AB81F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF89D0C125A48375005AB81F /* ViewController.swift */; };
 		AF89D0C825A48375005AB81F /* PracticeMVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF89D0C625A48375005AB81F /* PracticeMVVM.xcdatamodeld */; };
 		AF89D0CA25A48376005AB81F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF89D0C925A48376005AB81F /* Assets.xcassets */; };
 		AF89D0CD25A48376005AB81F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF89D0CB25A48376005AB81F /* LaunchScreen.storyboard */; };
@@ -47,7 +46,6 @@
 		AF89D0BA25A48375005AB81F /* PracticeMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF89D0BD25A48375005AB81F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF89D0BF25A48375005AB81F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF89D0C125A48375005AB81F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF89D0C725A48375005AB81F /* PracticeMVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PracticeMVVM.xcdatamodel; sourceTree = "<group>"; };
 		AF89D0C925A48376005AB81F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF89D0CC25A48376005AB81F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 			children = (
 				AF89D0BD25A48375005AB81F /* AppDelegate.swift */,
 				AF89D0BF25A48375005AB81F /* SceneDelegate.swift */,
-				AF89D0C125A48375005AB81F /* ViewController.swift */,
 				AF89D0C925A48376005AB81F /* Assets.xcassets */,
 				AF89D0CB25A48376005AB81F /* LaunchScreen.storyboard */,
 				AF89D0CE25A48376005AB81F /* Info.plist */,
@@ -165,7 +162,6 @@
 				581E409DD40E7AF4A88C7E29 /* Pods-PracticeMVVMTests.debug.xcconfig */,
 				99A21C6B83421200A92969E7 /* Pods-PracticeMVVMTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -425,7 +421,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF89D0C225A48375005AB81F /* ViewController.swift in Sources */,
 				AF89D0BE25A48375005AB81F /* AppDelegate.swift in Sources */,
 				AF89D0C825A48375005AB81F /* PracticeMVVM.xcdatamodeld in Sources */,
 				AF89D0C025A48375005AB81F /* SceneDelegate.swift in Sources */,
