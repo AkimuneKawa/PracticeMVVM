@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 import UIKit
 import SnapKit
 import Then
@@ -23,6 +25,7 @@ final class ViewController: UIViewController {
     }
     
     private let model: ViewModel
+    private let disposeBug = DisposeBag()
     
     init(model: ViewModel) {
         self.model = model
@@ -38,6 +41,7 @@ final class ViewController: UIViewController {
         
         setupViews()
         setupConstraints()
+        setupBindings()
     }
     
     private func setupViews() {
@@ -62,6 +66,32 @@ final class ViewController: UIViewController {
         validationLabel.snp.makeConstraints {
             $0.top.equalTo(passwordTextField.snp.bottom).offset(32)
             $0.centerX.equalTo(idTextField.snp.centerX)
+        }
+    }
+    
+    private func setupBindings() {
+        idTextField.rx.text.bind(onNext: { [weak self] text in
+            self?.model.idTextSubject.onNext(text)
+        })
+        .disposed(by: disposeBug)
+        
+        passwordTextField.rx.text.bind(onNext: { [weak self] text in
+            self?.model.passwordTextSubject.onNext(text)
+        })
+        .disposed(by: disposeBug)
+        
+        model.validationText
+            .bind(to: validationLabel.rx.text)
+            .disposed(by: disposeBug)
+        
+        model.loadLabelColor
+            .bind(to: loadLabelColor)
+            .disposed(by: disposeBug)
+    }
+    
+    private var loadLabelColor: Binder<UIColor> {
+        return Binder(self) { me, color in
+            me.validationLabel.textColor = color
         }
     }
 }

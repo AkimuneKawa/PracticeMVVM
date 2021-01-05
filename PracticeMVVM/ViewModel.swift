@@ -20,7 +20,6 @@ final class ViewModel {
     init(model: ModelProtocol) {
         let event = Observable
             .combineLatest(idTextSubject, passwordTextSubject)
-            .skip(1)
             .flatMap { idText, passwordText -> Observable<Event<Void>> in
                 return model
                     .validate(idText: idText, passwordText: passwordText)
