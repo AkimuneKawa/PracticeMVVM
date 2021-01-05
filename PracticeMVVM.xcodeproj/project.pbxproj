@@ -17,6 +17,9 @@
 		AF89D0CD25A48376005AB81F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF89D0CB25A48376005AB81F /* LaunchScreen.storyboard */; };
 		AF89D0D825A48376005AB81F /* PracticeMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF89D0D725A48376005AB81F /* PracticeMVVMTests.swift */; };
 		AF89D0E325A48377005AB81F /* PracticeMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF89D0E225A48377005AB81F /* PracticeMVVMUITests.swift */; };
+		AF89D0F125A48AA5005AB81F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF89D0F025A48AA5005AB81F /* Model.swift */; };
+		AF89D0F325A48D90005AB81F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF89D0F225A48D90005AB81F /* ViewModel.swift */; };
+		AF89D0F525A49EE2005AB81F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF89D0F425A49EE2005AB81F /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		AF89D0DE25A48377005AB81F /* PracticeMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF89D0E225A48377005AB81F /* PracticeMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeMVVMUITests.swift; sourceTree = "<group>"; };
 		AF89D0E425A48377005AB81F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF89D0F025A48AA5005AB81F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AF89D0F225A48D90005AB81F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AF89D0F425A49EE2005AB81F /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		CFDE75E99526E2DDD943D402 /* Pods_PracticeMVVM_PracticeMVVMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PracticeMVVM_PracticeMVVMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2F328EFB976163DBE986F3 /* Pods-PracticeMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeMVVM.debug.xcconfig"; path = "Target Support Files/Pods-PracticeMVVM/Pods-PracticeMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		FD42B2D63D487F5933BDBA0B /* Pods-PracticeMVVM-PracticeMVVMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeMVVM-PracticeMVVMUITests.release.xcconfig"; path = "Target Support Files/Pods-PracticeMVVM-PracticeMVVMUITests/Pods-PracticeMVVM-PracticeMVVMUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +130,9 @@
 		AF89D0BC25A48375005AB81F /* PracticeMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				AF89D0F025A48AA5005AB81F /* Model.swift */,
+				AF89D0F225A48D90005AB81F /* ViewModel.swift */,
+				AF89D0F425A49EE2005AB81F /* View.swift */,
 				AF89D0BD25A48375005AB81F /* AppDelegate.swift */,
 				AF89D0BF25A48375005AB81F /* SceneDelegate.swift */,
 				AF89D0C925A48376005AB81F /* Assets.xcassets */,
@@ -421,9 +430,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF89D0F325A48D90005AB81F /* ViewModel.swift in Sources */,
 				AF89D0BE25A48375005AB81F /* AppDelegate.swift in Sources */,
+				AF89D0F525A49EE2005AB81F /* View.swift in Sources */,
 				AF89D0C825A48375005AB81F /* PracticeMVVM.xcdatamodeld in Sources */,
 				AF89D0C025A48375005AB81F /* SceneDelegate.swift in Sources */,
+				AF89D0F125A48AA5005AB81F /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
