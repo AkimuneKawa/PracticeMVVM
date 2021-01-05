@@ -8,6 +8,8 @@ target 'PracticeMVVM' do
   # Pods for PracticeMVVM
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'Then'
 
   target 'PracticeMVVMTests' do
     inherit! :search_paths
